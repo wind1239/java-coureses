@@ -1,11 +1,16 @@
 import java.util.Scanner;
 
+/**
+ * Класс для работы с калькулятором
+ */
 public class InteractRunner {
+	
+	
 	public static void main(String[] args){
 		System.out.println("Program is work!");		
+		Calculator calc = new Calculator();
 		Scanner scn = new Scanner(System.in);
-		try {
-			Calculator calc = new Calculator();
+		try {		
 			String exit = "no";
 			while(!exit.equals("yes")){
 				calc.cleanResult();
